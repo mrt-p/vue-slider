@@ -9,6 +9,11 @@ var app = new Vue(
             'img/image3.jpg'
         ]
     },
+    created: function(){
+      setInterval(() => {
+        this.nextPhoto();
+      }, 4000);
+    },
     methods: {
         prevPhoto: function() {
             this.counterPhoto --;
@@ -21,6 +26,8 @@ var app = new Vue(
                 this.counterPhoto = 0;
             }
         },
+        circle(index) {
+          this.counterPhoto = index;
+        }
     }
 });
-

@@ -37,3 +37,19 @@
 .prev {
   left: 0;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nav i {
+  margin: 0 10px;
+}
+
+.nav i:active {
+  color: blue;
+}
+.nav i:visited {
+  color: blue;
+}
